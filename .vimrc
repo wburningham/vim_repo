@@ -1,7 +1,7 @@
 " wburningham's vimrc file
 " last updated: 29-Apr-2011
 " wburningham@gmail.com
-
+" This can be found on github
 
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
