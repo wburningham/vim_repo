@@ -1,0 +1,74 @@
+'------------------------
+' Navigation
+'------------------------
+ma						mark position with the letter 'a'
+`a						go to the position marked with an 'a'
+`.						go to the last position (or ctrl + o)
+gg						go to the top of the file
+G						go to the end of the file
+ctrl + u				go up a 1/2 page
+ctrl + d				go down a 1/2 page
+ctrl + f				go up a full page
+ctrl +				go down a full page
+25gg					goes to line 25
+
+'------------------------
+' Visual modes
+'------------------------
+v						enter visual mode
+V						enter visual-line mode
+ctrl + v				enter visual-block mode
+'------------------------
+' Searching
+'------------------------
+? pattern			searches for the pattern in the backward direction
+#						searches for the word your cursor in currently over
+n						jumps to next search result
+N						jumps to previous search result
+
+'------------------------
+' Buffers
+'------------------------
+:ball					open all buffers in split windows
+:bufdo bd			delete all buffers
+
+'------------------------
+' Editing
+'------------------------
+cc						change the entire line that your cursor in over
+ci'					changes the inner everything of the "'" marks
+cit					changes the inner tag content
+ci"
+ci(
+ci{
+ci[
+C						changed everything from the cursor to the end of the line
+D						delete everything from the cursor to the end of the line
+A						append to the end of the line
+I						prepend to the beginning of the line
+:%d						delete the contents of a file
+:r	path				read in the contents of the path
+:13,18d				delete everything from lines 13 to 18
+s						deletes the character and enters insert mode. same as "xi"
+>						When in a visual mode, this will indent right the selected area
+<						When in a visual mode, this will indent left the selected area
+
+'------------------------
+' Plugins
+'------------------------
+
+' NERDTree
+p						jump to parent directory
+P						jump to root directory
+m						opens menu
+ma						create a new object (file or directory) directory ends with a "/"
+s						open file in vertically split window
+i						open file in horizontally split window
+o						open file in buffer
+t						open file in new tab
+cd						change current directory to cursor
+:n *					open all files of current directory in buffers
+
+' Snipmate
+pattern + <tab>	expands the snippet with the tab key
+<tab>					once in an expanded snippet, tab jumps to the next tab stop
