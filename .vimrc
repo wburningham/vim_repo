@@ -117,7 +117,7 @@ vnoremap < <gv
 "imap ,<tab> <C-x><C-o>
 "Shorcut for NERDTreeToggle
 nmap ,nt :NERDTreeToggle<cr>
-" nmap tt :NERDTreeToggle<cr>
+nmap nt :NERDTreeToggle<cr>
 
 " Map CTRL-E to do what ',' used to do
 nnoremap <c-e> ,
