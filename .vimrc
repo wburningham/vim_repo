@@ -17,19 +17,14 @@ syntax on
 " Syntax coloring lines that are too long just slows down the world
 set synmaxcol=2048
 
-
 "Enable code folding
 set foldenable
 
 "Shortcut to fold tags with leader (usually \) + ft
 "nnoremap <leader>ft Vatzf
 
-
 " Make command line two lines high
 set ch=2
-
-
-
 
 " Show the current mode
 set showmode
