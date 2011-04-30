@@ -101,6 +101,7 @@ abbrev ss :w<cr> :! open -a safari.app %:p<cr>
 nmap ,d :cd ~/Desktop<cr>:e.<cr>
 "Shortcut for editing vimrc file
 nmap ,ev :tabnew $MYVIMRC<cr>
+nmap ,s :cd ~/Sites<cr>:e.<cr>
 "Saves time 
 nmap <space> :
 "Map escape to ,e
