@@ -100,7 +100,7 @@ abbrev ss :w<cr> :! open -a safari.app %:p<cr>
 "Map a change to the Desktop
 nmap ,d :cd ~/Desktop<cr>:e.<cr>
 "Shortcut for editing vimrc file
-nmap ,<?php if (! defined('BASEPATH')) exiev :tabnew $MYVIMRC<cr>
+nmap ,ev :tabnew $MYVIMRC<cr>
 "Saves time 
 nmap <space> :
 "Map escape to ,e
