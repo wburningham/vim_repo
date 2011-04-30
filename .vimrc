@@ -29,9 +29,7 @@ set synmaxcol=2048
 " Make command line two lines high
 set ch=2
 
-" If you select some lines then press > to indent the lines, the selection is removed. The indentation can be repeated on the same range using ., but if you still want to retain the visual selection after having pressed > or <, you can use these mappings
-vnoremap > >gv
-vnoremap < <gv
+
 
 
 " Show the current mode
@@ -87,13 +85,7 @@ set smartcase
 
 
 
-"http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
-" set completeopt=longest,menuone
-" inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-" inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
-"   \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-" inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
-"   \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+
 
 
 
@@ -117,39 +109,46 @@ imap ,e <esc>
 "Map escape key to jj -- much faster
 imap jj <esc>
 
-
+" If you select some lines then press > to indent the lines, the selection is removed. The indentation can be repeated on the same range using ., but if you still want to retain the visual selection after having pressed > or <, you can use these mappings
+vnoremap > >gv
+vnoremap < <gv
 
 "Map code completion to , + tab
 "imap ,<tab> <C-x><C-o>
 "Shorcut for NERDTreeToggle
 nmap ,nt :NERDTreeToggle<cr>
-nmap bb :NERDTreeToggle<cr>
+" nmap tt :NERDTreeToggle<cr>
 
 " Map CTRL-E to do what ',' used to do
 nnoremap <c-e> ,
 vnoremap <c-e> ,
 
-
+"----- Auto Commands -----
 
 "Automatically change current dir to that of the file in the buffer
 " autocmd BufEnter * cd %:p:h
-
 
 "Source the vimrc file afer modifying
 if has("autocmd")
 	autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
+
+
+
+
+
+
 "----- Plugin Settings -----
-"SnipMate
+" SnipMate
 let g:snips_author = 'Jarrett Burningham'
 
 
-"Zen Coding
+" Zen Coding
 "Change zen coding plugin expansion key to shift + e
 let g:user_zen_expandabbr_key = ',<tab>'
 
-"NERDTree
+" NERDTree
 " Show hidden files in NerdTree
 let NERDTreeShowHidden=1   
 " Show the bookmarks table on startup
