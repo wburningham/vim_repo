@@ -20,7 +20,7 @@ set synmaxcol=2048
 
 
 "Enable code folding
-"set foldenable
+set foldenable
 
 "Shortcut to fold tags with leader (usually \) + ft
 "nnoremap <leader>ft Vatzf
@@ -109,13 +109,14 @@ abbrev ss :w<cr> :! open -a safari.app %:p<cr>
 "Map a change to the Desktop
 nmap ,d :cd ~/Desktop<cr>:e.<cr>
 "Shortcut for editing vimrc file
-nmap ,ev :tabnew $MYVIMRC<cr>
+nmap ,<?php if (! defined('BASEPATH')) exiev :tabnew $MYVIMRC<cr>
 "Saves time 
 nmap <space> :
 "Map escape to ,e
 imap ,e <esc>
 "Map escape key to jj -- much faster
 imap jj <esc>
+" Map open hovered file in buffer
 
 
 
