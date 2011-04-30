@@ -2,7 +2,6 @@
 " last updated: 29-Apr-2011
 " wburningham@gmail.com
 
-
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -20,7 +19,7 @@ set synmaxcol=2048
 
 
 "Enable code folding
-"set foldenable
+set foldenable
 
 "Shortcut to fold tags with leader (usually \) + ft
 "nnoremap <leader>ft Vatzf
@@ -101,13 +100,14 @@ abbrev ss :w<cr> :! open -a safari.app %:p<cr>
 "Map a change to the Desktop
 nmap ,d :cd ~/Desktop<cr>:e.<cr>
 "Shortcut for editing vimrc file
-nmap ,ev :tabnew $MYVIMRC<cr>
+nmap ,<?php if (! defined('BASEPATH')) exiev :tabnew $MYVIMRC<cr>
 "Saves time 
 nmap <space> :
 "Map escape to ,e
 imap ,e <esc>
 "Map escape key to jj -- much faster
 imap jj <esc>
+" Map open hovered file in buffer
 
 " If you select some lines then press > to indent the lines, the selection is removed. The indentation can be repeated on the same range using ., but if you still want to retain the visual selection after having pressed > or <, you can use these mappings
 vnoremap > >gv
