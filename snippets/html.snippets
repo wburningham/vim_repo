@@ -178,6 +178,8 @@ snippet link
 	<link rel="${1:stylesheet}" href="${2:/css/master.css}" type="text/css" media="${3:screen}" charset="utf-8"`Close()`>${4}
 snippet mailto
 	<a href="mailto:${1:joe@example.com}?subject=${2:feedback}">${3:email me}</a>
+snippet a
+	<a href="${1}" ${2:target="_blank"}>${3}</a>${4}
 snippet meta
 	<meta name="${1:name}" content="${2:content}"`Close()`>${3}
 snippet opt
@@ -195,3 +197,5 @@ snippet table
 	</table>${4}
 snippet textarea
 	<textarea name="${1:Name}" rows="${2:8}" cols="${3:40}">${4}</textarea>${5}
+snippet jquery
+	https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js${1}
