@@ -11,7 +11,7 @@ snippet cicontroller
 
 		//php 5 constructor
 		function __construct() {
-			parent::Controller();
+			parent::__construct();
 		}
 	
 		${4}
@@ -44,7 +44,9 @@ snippet cimodel
 
 		//php 5 constructor
 		function __construct() {
-			parent::Model();
+			// Call the Model constructor
+			parent::__construct();
+			
 		}
 		
 		${4}
@@ -376,3 +378,5 @@ snippet function
 
 snippet array
 	$${1:arrayName} = array('${2}' => ${3});${4}
+snippet ternary
+	${1} = (${2://condition} ? ${3://true} : ${4://false});
