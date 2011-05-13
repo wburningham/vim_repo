@@ -229,3 +229,11 @@ iab everythign	everything
 iab Everythign	Everything
 iab anythign	anything
 iab Anythign	anything
+iab wahts		whats
+iab waht			what
+iab Wahts		Whats
+iab Waht			What
+iab pubilc		public
+iab Pubilc		Public
+iab defualt		default
+iab Defualt		Default

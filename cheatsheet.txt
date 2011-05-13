@@ -10,7 +10,8 @@ ctrl + u				go up a 1/2 page
 ctrl + d				go down a 1/2 page
 ctrl + f				go up a full page
 ctrl +				go down a full page
-25gg					goes to line 25
+25gg 25G					goes to line 25
+gf						go to the file referenced under the cursor
 
 '------------------------
 ' Visual modes
@@ -18,6 +19,9 @@ ctrl +				go down a full page
 v						enter visual mode
 V						enter visual-line mode
 ctrl + v				enter visual-block mode
+NOTE: o switches the cursor to the other corner to continue selection from there
+
+
 '------------------------
 ' Searching
 '------------------------
@@ -25,6 +29,8 @@ ctrl + v				enter visual-block mode
 #						searches for the word your cursor in currently over
 n						jumps to next search result
 N						jumps to previous search result
+.						referrs to the current line
+%						referrs to the entire file 
 
 '------------------------
 ' Buffers
@@ -42,6 +48,7 @@ ci"
 ci(
 ci{
 ci[
+NOTE: on the ones above, change the i to an a and it will also select the containing character (ie remove the quote marks in addition to whats inside)
 C						changed everything from the cursor to the end of the line
 D						delete everything from the cursor to the end of the line
 A						append to the end of the line
@@ -52,6 +59,21 @@ I						prepend to the beginning of the line
 s						deletes the character and enters insert mode. same as "xi"
 >						When in a visual mode, this will indent right the selected area
 <						When in a visual mode, this will indent left the selected area
+df;					delete text from the cursor to the first ; to the right
+cT$					change text from the cursor to the first $ to the left
+CTRL-A CTRL-X		increment/decrement the numbers under the cursor
+
+
+'------------------------
+' Folding
+'------------------------
+zo						open folded section
+zc						close closest fold
+zR						open all folds
+zM						close all folds
+zj						move to the start of the next fold
+zk						move to the end of the previous fold
+
 
 '------------------------
 ' Plugins
