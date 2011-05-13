@@ -138,6 +138,7 @@ endif
 "----- Plugin Settings -----
 " SnipMate
 let g:snips_author = 'Jarrett Burningham'
+" let g:snips_author = $USER
 
 
 " Zen Coding
