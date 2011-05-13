@@ -21,16 +21,16 @@ snippet cicontroller
 
 
 
-	/* `Filename(' End of file', 'filename')`.php */
+	/* End of file: `Filename('', 'filename')`.php */ 
 	/* Location: ./application/${3}/`Filename('', 'filename')`.php */ 
 	
 snippet fun
 	/**
-	*	${1:description}
-	*
-	*  @since `strftime("%d-%b-%Y")`
-	*  @author  `g:snips_author`
-	*	@access $2
+	 *	${1:description}
+	 *
+	 *  @since `strftime("%d-%b-%Y")`
+	 *  @author  `g:snips_author`
+	 *	 @access $2
 	*/
 	${2:public }function ${3:FunctionName}(${4})
 	{
@@ -54,7 +54,7 @@ snippet cimodel
 
 	}	
 
-	/* `Filename(' End of file', 'filename')`.php */
+	/* End of file: `Filename('', 'filename')`.php */ 
 	/* Location: ./application/${3}/`Filename('', 'filename')`.php */ 
 
 snippet cidb
@@ -128,7 +128,7 @@ snippet formval
 
 
 snippet ciloadview
-	$this->load->view('${1:view}'${2:, ${3:data}${4:, ${5:TRUE}}});${6}
+	$this->load->view('${1:view}'${2:,}${3:$data});${4}
 
 snippet ciloadhelper
 	$this->load->helper(${1:'${2:name}'${3:, '${4:name}'${5:, '${6:name}'}}});${7}
@@ -365,11 +365,11 @@ snippet foreach
 	}
 snippet function
 	/**
-	*	${1:description}
-	*
-	*  @since `strftime("%d-%b-%Y")`
-	*  @author  `g:snips_author`
-	*	@access $2
+	 *	${1:description}
+	 *
+	 *  @since `strftime("%d-%b-%Y")`
+	 *  @author  `g:snips_author`
+	 *	 @access $2
 	*/
 	${2:public }function ${3:FunctionName}(${4})
 	{
