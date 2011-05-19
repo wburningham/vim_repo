@@ -19,8 +19,8 @@ gf						go to the file referenced under the cursor
 v						enter visual mode
 V						enter visual-line mode
 ctrl + v				enter visual-block mode
+ctrl + v$			enter visual-block mode that appends to the end of the lines
 NOTE: o switches the cursor to the other corner to continue selection from there
-
 
 '------------------------
 ' Searching
@@ -75,6 +75,15 @@ zj						move to the start of the next fold
 zk						move to the end of the previous fold
 
 
+
+'------------------------
+' Other
+'------------------------
+ctrl + p				autocomplete the variable/word by looking backwards in the file
+,v						same as above, but mapped in vimrc
+
+
+
 '------------------------
 ' Plugins
 '------------------------
@@ -94,3 +103,11 @@ cd						change current directory to cursor
 ' Snipmate
 pattern + <tab>	expands the snippet with the tab key
 <tab>					once in an expanded snippet, tab jumps to the next tab stop
+' Fuzzy Finder
+
+Once you have found your file,
+        CR  (|g:fuf_keyOpen|)        - opens in a previous window. 
+        C-j (|g:fuf_keyOpenSplit|)   - opens in a split window. 
+        C-k (|g:fuf_keyOpenVsplit|)  - opens in a vertical-split window. 
+        C-l (|g:fuf_keyOpenTabpage|) - opens in a new tab page.
+

@@ -2,6 +2,36 @@
 " last updated: 29-Apr-2011
 " wburningham@gmail.com
 
+
+
+
+
+
+" Plugins_Included
+"     > surround.vim - http://www.vim.org/scripts/script.php?script_id=1697
+"       Makes it easy to work with surrounding text:
+"           info -> :help surround
+"
+"     > snipMate.vim - http://www.vim.org/scripts/script.php?script_id=2540
+"       Snippets for many languages (similar to TextMate's):
+"           info -> :help snipMate
+"
+"     > ZenCoding.vim - http://www.vim.org/scripts/script.php?script_id=2981
+"       Plugin to support expanding abbreviation like zen-coding
+"           info -> :help ZenCoding
+"
+"     > Command-T - http://www.vim.org/scripts/script.php?script_id=3025
+"       Command-T plug-in provides an extremely fast, intuitive mechanism for opening filesa:
+"           info -> :help CommandT
+"           screencast and web-help -> http://amix.dk/blog/post/19501
+"
+"     > Toggle - http://www.vim.org/scripts/script.php?script_id=895
+"       Toogle allows you to toggle bool (true/false) and other words with a shortcut
+
+
+
+
+
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -103,7 +133,8 @@ nmap <space> :
 imap ,e <esc>
 "Map escape key to jj -- much faster
 imap jj <esc>
-" Map open hovered file in buffer
+" map variable auto complete
+imap ,v <c-p>
 
 " If you select some lines then press > to indent the lines, the selection is removed. The indentation can be repeated on the same range using ., but if you still want to retain the visual selection after having pressed > or <, you can use these mappings
 vnoremap > >gv
@@ -202,39 +233,49 @@ let g:fuf_maxMenuWidth = 200
 
 
 "----- Fix constant spelling mistakes -----
-iab teh       the
-iab hte		  the
-iab Hte		  The
-iab Teh       The
-iab taht      that
-iab Taht      That
-iab alos      also
-iab Alos      Also
-iab aslo      also
-iab Aslo      Also
-iab becuase   because
-iab Becuase   Because
-iab charcter  character
-iab Charcter  Character
-iab charcters characters
-iab Charcters Characters
-iab exmaple   example
-iab Exmaple   Example
-iab exmaples  examples
-iab Exmaples  Examples
-iab shoudl    should
-iab Shoudl    Should
-iab seperate  separate
-iab Seperate  Separate
-iab everythign	everything
-iab Everythign	Everything
-iab anythign	anything
-iab Anythign	anything
-iab wahts		whats
-iab waht			what
-iab Wahts		Whats
-iab Waht			What
-iab pubilc		public
-iab Pubilc		Public
-iab defualt		default
-iab Defualt		Default
+iab teh				the
+iab hte				the
+iab Hte				The
+iab Teh				The
+iab taht				that
+iab Taht				That
+iab alos				also
+iab Alos				Also
+iab aslo				also
+iab Aslo				Also
+iab becuase			because
+iab Becuase			Because
+iab charcter		character
+iab Charcter		Character
+iab charcters		characters
+iab Charcters		Characters
+iab exmaple			example
+iab Exmaple			Example
+iab exmaples		examples
+iab Exmaples		Examples
+iab shoudl			should
+iab Shoudl			Should
+iab seperate		separate
+iab Seperate		Separate
+iab everythign		everything
+iab Everythign		Everything
+iab anythign		anything
+iab Anythign		anything
+iab wahts			whats
+iab waht				what
+iab Wahts			Whats
+iab Waht				What
+iab pubilc			public
+iab Pubilc			Public
+iab defualt			default
+iab Defualt			Default
+iab roght			right
+iab Roght			Right
+iab performa		performs
+iab Performa		Performs
+iab searhc			search
+iab Searhc			Search
+iab roels			roles
+iab Roels			Roles
+iab removs			removes
+iab Removs			Removes
