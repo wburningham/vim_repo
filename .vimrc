@@ -48,6 +48,12 @@ set synmaxcol=2048
 "Enable code folding
 set foldenable
 
+" With a map leader it's possible to do extra key combinations
+" like <leader>w saves the current file
+let mapleader = ","
+let g:mapleader = ","
+
+
 "Shortcut to fold tags with leader (usually \) + ft
 "nnoremap <leader>ft Vatzf
 
