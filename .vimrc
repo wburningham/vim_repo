@@ -5,8 +5,6 @@
 
 
 
-
-
 " Plugins_Included
 "     > surround.vim - http://www.vim.org/scripts/script.php?script_id=1697
 "       Makes it easy to work with surrounding text:
@@ -135,6 +133,18 @@ imap ,e <esc>
 imap jj <esc>
 " map variable auto complete
 imap ,v <c-p>
+
+" Maps change word to change inner word. Saves one keystroke and I almose always
+" want to change the inner word.
+nmap cw ciw
+
+" ----- Buffers -----
+"
+" Map ,b to switch back to the last buffer
+map ,b :b#<CR>
+
+" :bda destroyes all buffers
+nmap :bda :bufdo bd
 
 " If you select some lines then press > to indent the lines, the selection is removed. The indentation can be repeated on the same range using ., but if you still want to retain the visual selection after having pressed > or <, you can use these mappings
 vnoremap > >gv
