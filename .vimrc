@@ -210,7 +210,7 @@ map ,c <c-_><c-_>
 
 " FuzzyFinder Settings
 nmap ,fb :FufBuffer<CR>
-nmap ,ff :FufFile<CR>
+" nmap ,ff :FufFile<CR>
 nmap ,ft :FufTag<CR>
 
 
