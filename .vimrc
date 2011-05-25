@@ -25,6 +25,24 @@
 "
 "     > Toggle - http://www.vim.org/scripts/script.php?script_id=895
 "       Toogle allows you to toggle bool (true/false) and other words with a shortcut
+"				info ->
+"
+"     > tComment - http://www.vim.org/scripts/script.php?script_id=1173
+"		  An extensible & universal comment plugin that also handles embedded filetypes 
+"				info -> :help tComment
+"
+"		> jsbeautify - http://www.vim.org/scripts/script.php?script_id=2727
+"		  a javascript source code formatter 
+"				info -> 
+"
+"		> NerdTree - http://www.vim.org/scripts/script.php?script_id=1658
+"		  A tree explorer plugin for navigating the filesystem 
+"				info -> :h NerdTree 
+"
+"		> FuzzyFinder - http://www.vim.org/scripts/script.php?script_id=1984 
+"		  Buffer/file/command/tag/etc explorer with fuzzy matching 
+"				info -> :h FuzzyFinder 
+
 
 
 
