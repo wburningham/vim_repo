@@ -267,8 +267,12 @@ nmap ,fp :call FufProject()<CR>
 " nmap ff :call FufProject()<CR>
 let g:fuf_maxMenuWidth = 200
 
-" Command T shortcut
+
+" Command-T shorcut
 nmap ff <leader>t
+
+nmap <silent> ff :CommandT<CR>
+  " let g:CommandTCancelMap=['jj', '<C-c>']
 
 
 "----- Fix constant spelling mistakes -----
