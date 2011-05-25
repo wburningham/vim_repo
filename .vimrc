@@ -144,6 +144,11 @@ imap ,v <c-p>
 " want to change the inner word.
 nmap cw ciw
 
+" delete the current line & replace with an empty line
+" This may cause problems when trying to replace a letter with an r
+nmap rr ccjj
+
+
 " ----- Buffers -----
 "
 " Map ,b to switch back to the last buffer
@@ -241,11 +246,11 @@ function! FufProject()
 endfunction
 
 nmap ,fp :call FufProject()<CR>
-nmap ff :call FufProject()<CR>
+" nmap ff :call FufProject()<CR>
 let g:fuf_maxMenuWidth = 200
 
-
-
+" Command T shortcut
+nmap ff <leader>t
 
 
 "----- Fix constant spelling mistakes -----
