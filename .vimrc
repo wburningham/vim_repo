@@ -324,3 +324,7 @@ iab removs			removes
 iab Removs			Removes
 iab reccommend		recommend
 iab Reccommend		Recommend
+iab cahnged			changed
+iab Cahnged			Changed
+iab Haev				Have
+iab haev				have
