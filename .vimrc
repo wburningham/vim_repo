@@ -328,3 +328,6 @@ iab cahnged			changed
 iab Cahnged			Changed
 iab Haev				Have
 iab haev				have
+iab somethign		something
+iab Somethign		Something
+iab null				iab NULL
