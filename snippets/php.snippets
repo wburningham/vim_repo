@@ -1,5 +1,10 @@
 #-------------- BEGIN CI SNIPPETS ------------------
 
+snippet cilog
+	log_message(
+		'error',
+		'${1}'
+	);
 snippet cicontroller
 	<?php if (! defined('BASEPATH')) exit('No direct script access');
 
@@ -383,7 +388,8 @@ snippet for
 		${4: // code...}
 	}
 snippet foreach
-	foreach ($${1:variable} as $${2:key}) {
+	foreach ($${1:variable} as $${2:key}) 
+	{
 		${3:// code...}
 	}
 snippet function

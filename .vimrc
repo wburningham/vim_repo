@@ -86,7 +86,8 @@ set showcmd
 " Hide the mouse pointer while typing
 set mousehide
 
-colorscheme dusk
+" Theme favs: dusk, dw_cyan
+colorscheme dw_cyan
 set nohidden
 " Show the current cursor position in the lower right corner
 set ruler
@@ -279,6 +280,8 @@ let g:fuf_maxMenuWidth = 200
 nmap ff <leader>t
 
 nmap <silent> ff :CommandT<CR>
+nmap <silent> fb :CommandTBuffer<CR>
+nmap <silent> fr :CommandTFlus<CR>
   " let g:CommandTCancelMap=['jj', '<C-c>']
 
 
