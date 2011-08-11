@@ -145,10 +145,10 @@ abbrev ss :w<cr> :! open -a safari.app %:p<cr>
 
 "----- Mappings -----
 "Map a change to the Desktop
-nmap ,d :cd ~/Desktop<cr>:e.<cr>
+" nmap ,d :cd ~/Desktop<cr>:e.<cr>
 "Shortcut for editing vimrc file
 nmap ,ev :tabnew $MYVIMRC<cr>
-nmap ,s :cd ~/Sites<cr>:e.<cr>
+" nmap ,s :cd ~/Sites<cr>:e.<cr>
 "Saves time 
 nmap <space> :
 "Map escape to ,e
@@ -157,6 +157,9 @@ imap ,e <esc>
 imap jj <esc>
 " map variable auto complete
 imap ,v <c-p>
+
+
+
 
 " Maps change word to change inner word. Saves one keystroke and I almose always
 " want to change the inner word.
@@ -209,6 +212,10 @@ endif
 " SnipMate
 let g:snips_author = 'Jarrett Burningham'
 " let g:snips_author = $USER
+
+" Autocomplete list of avaliable snippets
+imap <tab><tab> <c-r><tab>
+
 
 
 " Zen Coding
@@ -331,3 +338,5 @@ iab haev				have
 iab somethign		something
 iab Somethign		Something
 iab null				iab NULL
+iab Otehrwise		Otherwise
+iab otehrwise		otherwise
