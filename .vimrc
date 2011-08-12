@@ -215,7 +215,7 @@ let g:snips_author = 'Jarrett Burningham'
 " let g:snips_author = $USER
 
 " Autocomplete list of avaliable snippets
-imap <tab><tab> <c-r><tab>
+" imap <tab><tab> <c-r><tab>
 
 
 

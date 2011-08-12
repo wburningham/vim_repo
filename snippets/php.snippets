@@ -5,6 +5,7 @@ snippet cilog
 		'error',
 		'${1}'
 	);
+
 snippet cicontroller
 	<?php if (! defined('BASEPATH')) exit('No direct script access');
 
@@ -24,10 +25,10 @@ snippet cicontroller
 
 	/* End of file: `Filename('', 'filename')`.php */ 
 	/* Location: ./app/${3}/`Filename('', 'filename')`.php */ 
-	
+
 snippet fun
 	/**
-	 *	${1:description}
+	 *	 ${1:description}
 	 *
 	 *  @since `strftime("%d-%b-%Y")`
 	 *  @author  `g:snips_author`
@@ -57,9 +58,10 @@ snippet cimodel
 
 	/* End of file: `Filename('', 'filename')`.php */ 
 	/* Location: ./app/${3}/`Filename('', 'filename')`.php */ 
-snippet function 
+
+snippet modelfun 
 	/**
-	 *	${1:description}
+	 *	 ${1:description}
 	 *
 	 *  @since `strftime("%d-%b-%Y")`
 	 *  @author  `g:snips_author`
@@ -158,7 +160,6 @@ snippet ciloadhelper
 
 snippet ciloadlib
 	$this->load->library('${1:library}'${2:, ${3:config}${4:, '${5:object_name}'}});${6}
-
 
 snippet ciload
 	$this->load->${1:function}(${2});${3}
