@@ -5,7 +5,6 @@ snippet cilog
 		'error',
 		'${1}'
 	);
-
 snippet cicontroller
 	<?php if (! defined('BASEPATH')) exit('No direct script access');
 
@@ -177,10 +176,9 @@ snippet baseurl
 
 snippet php Single line #1
 	<?php ${1://code} ?>${2}
-
 snippet php Multiline #2
 	<?php
-		${1}
+		${1://code}
 	?>
 snippet ec
 	echo "${1:string}"${2};
@@ -406,10 +404,12 @@ snippet function
 		${5:// code...}
 	}
 
-snippet array
-	array(${1} ${2:=>} ${3});${4}
+snippet debug
+	debug(${1}, FALSE);
+snippet arr
+	array(${1})
 snippet ternary
 	$${1} = (${2://condition} ? ${3://true} : ${4://false});${5}
 
-snippet deb
-	debug(${1});${2}
+snippet d
+	debug(${1}, FALSE);
