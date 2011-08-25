@@ -159,15 +159,18 @@ snippet ciloadhelper
 
 snippet ciloadlib
 	$this->load->library('${1:library}'${2:, ${3:config}${4:, '${5:object_name}'}});${6}
-
+snippet ciget
+	$this->input->get(${1});
+snippet cipost
+	$this->input->post(${1});
+snippet ciinput
+	$this->input->${1:post}(${2});
 snippet ciload
 	$this->load->${1:function}(${2});${3}
 snippet redirect
 	redirect(${1:'${2:url}'${3:, ${4:method(location/refresh)}${5:, ${6:response_code}}}});${7}
-
 snippet cisession
 	$this->session->${1:function}(${2});${3}
-
 snippet siteurl
 	site_url(${1});${2}
 snippet baseurl

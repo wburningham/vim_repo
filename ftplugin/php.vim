@@ -107,3 +107,9 @@ set tags=./tags,tags
 
 " vim: set fdm=marker:
 
+" Capitalize certain words in PHP
+iab null			NULL
+iab false		FALSE
+iab fasle		FALSE
+iab true			TRUE
+iab ture			TRUE

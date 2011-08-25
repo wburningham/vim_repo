@@ -87,7 +87,7 @@ set showcmd
 set mousehide
 
 " Theme favs: dusk, dw_cyan
-colorscheme dw_cyan
+colorscheme xoria256
 set nohidden
 " Show the current cursor position in the lower right corner
 set ruler
@@ -340,6 +340,9 @@ iab Haev				Have
 iab haev				have
 iab somethign		something
 iab Somethign		Something
-iab null				iab NULL
 iab Otehrwise		Otherwise
 iab otehrwise		otherwise
+iab tehere			there
+iab Tehere			There
+iab tpye				type
+iab Tpye				Type
