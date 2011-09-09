@@ -10,12 +10,14 @@ snippet cicontroller
 
 	class ${1:class_name} extends ${2:CI}_Controller {
 
-		//php 5 constructor
-		function __construct() {
-			parent::__construct();
-		}
-	
-		${4}
+	/**
+	 *	 Constructor
+	*/
+	function __construct() {
+		parent::__construct();
+	}
+
+	${4}
 
 	}
 
@@ -43,15 +45,16 @@ snippet cimodel
 
 	class ${1:class_name} extends ${2:CI}_Model {
 
-		//php 5 constructor
-		function __construct() {
-			// Call the Model constructor
-			parent::__construct();
-			
-		}
+	/**
+	 *	 Constructor
+	*/
+	function __construct() 
+	{
+		// Call the Model constructor
+		parent::__construct();
+	}
 		
-		${4}
-
+	${4}
 
 	}	
 
@@ -343,6 +346,10 @@ snippet do
 	do {
 		${2:// code... }
 	} while (${1:/* condition */});
+snippet if:
+	<?php if(${1:TRUE}): ?>
+		${2://code...}
+	<?php endif; ?>
 snippet if
 	if (${1:/* condition */}) 
 	{
@@ -406,7 +413,15 @@ snippet function
 	{
 		${5:// code...}
 	}
-
+snippet tc
+	try
+	{
+		${1:// try code}
+	}
+	catch(Exception {2:$e})
+	{
+		${3:// catch code}
+	}
 snippet debug
 	debug(${1}, FALSE);
 snippet arr

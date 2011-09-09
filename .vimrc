@@ -87,7 +87,7 @@ set showcmd
 set mousehide
 
 " Theme favs: dusk, dw_cyan
-colorscheme xoria256
+colorscheme molokai
 set nohidden
 " Show the current cursor position in the lower right corner
 set ruler
@@ -98,7 +98,7 @@ set shiftwidth=3
 set softtabstop=3
 
 
-set guifont=Monaco:h17
+set guifont=Monaco:h14
 
 " Switch between buffers without saving
 set hidden

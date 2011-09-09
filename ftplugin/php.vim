@@ -87,7 +87,7 @@ vnoremap <buffer> <C-P> :call PhpDocRange()<CR>
 " Generate @uses tag based on inheritance info
 let g:pdv_cfg_Uses = 1
 " Set default Copyright
-let g:pdv_cfg_Copyright = "Copyright (C) 2010 Andrei Zmievski"
+let g:pdv_cfg_Copyright = "Copyright (C) 2011 Jarrett Burningham"
 
 " Exuberant Ctags
 "
