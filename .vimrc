@@ -42,7 +42,10 @@
 "		> FuzzyFinder - http://www.vim.org/scripts/script.php?script_id=1984 
 "		  Buffer/file/command/tag/etc explorer with fuzzy matching 
 "				info -> :h FuzzyFinder 
-
+"
+"		> Indent Guides - http://www.vim.org/scripts/script.php?script_id=3361
+"		  A plugin for visually displaying indent levels in Vim. 
+"				info -> :h indent-guides 
 
 
 
@@ -283,6 +286,12 @@ nmap <silent> ff :CommandT<CR>
 nmap <silent> fb :CommandTBuffer<CR>
 nmap <silent> fr :CommandTFlus<CR>
   " let g:CommandTCancelMap=['jj', '<C-c>']
+
+" Indent Guide Settings
+let g:indent_guides_start_level=2
+let g:indent_guides_guide_size=1
+let g:indent_guides_enable_on_vim_startu = 1
+
 
 
 "----- Fix constant spelling mistakes -----
