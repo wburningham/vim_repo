@@ -355,3 +355,13 @@ iab tehere			there
 iab Tehere			There
 iab tpye				type
 iab Tpye				Type
+iab differnt		different
+iab Differnt		Different
+iab charaters		characters
+iab Charaters		Characters
+iab charater		character
+iab Charater		Character
+iab begining		beginning
+iab Begining		Beginning
+iab proccessor		processor
+iab Proccessor		Processor
