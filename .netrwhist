@@ -1,10 +1,1 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/wburningham/Desktop/newDir'
-let g:netrw_dirhist_2='ftp://webadmin@mylink.byu.edu/var/www/dev/'
-let g:netrw_dirhist_3='ftp://webadmin@mylink.byu.edu/var/www/'
-let g:netrw_dirhist_4='ftp://webadmin@ftp.mylink.byu.edu/'
-let g:netrw_dirhist_5='ftp://webadmin@mylink.byu.edu/var/www/'
-let g:netrw_dirhist_6='/Users/wburningham/Sites/ci/phpDoctor'
-let g:netrw_dirhist_7='/Users/burninwj/Desktop'
-let g:netrw_dirhist_8='/Users/burninwj/Sites/dev'
+let g:netrw_dirhist_cnt =0

@@ -144,6 +144,7 @@ set smartcase
 "Load current buffer in different browsers
 abbrev ff :w<cr> :! open -a firefox.app %:p<cr>
 abbrev ss :w<cr> :! open -a safari.app %:p<cr>
+abbrev cc :w<cr> :! open -a chrome.app %:p<cr>
 
 
 
