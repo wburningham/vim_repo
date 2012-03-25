@@ -370,3 +370,27 @@ iab reponse			response
 iab Reponse			Response
 iab Surevy			Survey
 iab surevy			survey
+iab avalibale		avaliable
+iab Avalibale		Avaliable
+iab everthing		everything
+iab startes			starts
+iab gam				game
+iab REbecca			Rebecca
+iab wnt				want
+iab agin				again
+iab htat				that
+iab stroner			stronger
+iab adn				and
+iab trak				track
+iab wansts			wants
+iab dooing			dooing
+iab anf				and
+iab amzaing			amazing
+iab thay				they
+iab lvo				love
+iab biship			bishop
+iab Biship			Bishop
+iab charis			chairs
+iab chari			chair
+iab goin				going
+
