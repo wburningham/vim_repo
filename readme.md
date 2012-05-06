@@ -7,8 +7,7 @@ Many of the item in my vim repo were taken from Jeffrey Way's <a href="https://g
 
 ###Create symlinks:
 
-    ln -s ~/.vim/vimrc ~/.vimrc
-    ln -s ~/.vim/gvimrc ~/.gvimrc
+    ln -s ~/.vim/.vimrc ~/.vimrc
 
 ###Other
 Change the username for the snippets in the .vimrc file
