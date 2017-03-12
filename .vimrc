@@ -1,54 +1,6 @@
 " wburningham's vimrc file
-" last updated: 29-Apr-2011
+" last updated: 12-Mar-2017
 " wburningham@gmail.com
-
-
-
-
-" Plugins_Included
-"     > surround.vim - http://www.vim.org/scripts/script.php?script_id=1697
-"       Makes it easy to work with surrounding text:
-"           info -> :help surround
-"
-"     > snipMate.vim - http://www.vim.org/scripts/script.php?script_id=2540
-"       Snippets for many languages (similar to TextMate's):
-"           info -> :help snipMate
-"
-"     > ZenCoding.vim - http://www.vim.org/scripts/script.php?script_id=2981
-"       Plugin to support expanding abbreviation like zen-coding
-"           info -> :help ZenCoding
-"
-"     > Command-T - http://www.vim.org/scripts/script.php?script_id=3025
-"       Command-T plug-in provides an extremely fast, intuitive mechanism for opening filesa:
-"           info -> :help CommandT
-"           screencast and web-help -> http://amix.dk/blog/post/19501
-"
-"     > Toggle - http://www.vim.org/scripts/script.php?script_id=895
-"       Toogle allows you to toggle bool (true/false) and other words with a shortcut
-"				info ->
-"
-"     > tComment - http://www.vim.org/scripts/script.php?script_id=1173
-"		  An extensible & universal comment plugin that also handles embedded filetypes 
-"				info -> :help tComment
-"
-"		> jsbeautify - http://www.vim.org/scripts/script.php?script_id=2727
-"		  a javascript source code formatter 
-"				info -> 
-"
-"		> NerdTree - http://www.vim.org/scripts/script.php?script_id=1658
-"		  A tree explorer plugin for navigating the filesystem 
-"				info -> :h NerdTree 
-"
-"		> FuzzyFinder - http://www.vim.org/scripts/script.php?script_id=1984 
-"		  Buffer/file/command/tag/etc explorer with fuzzy matching 
-"				info -> :h FuzzyFinder 
-"
-"		> Indent Guides - http://www.vim.org/scripts/script.php?script_id=3361
-"		  A plugin for visually displaying indent levels in Vim. 
-"				info -> :h indent-guides 
-
-
-
 
 
 " Use Vim settings, rather then Vi settings (much better!).
@@ -134,20 +86,6 @@ set ignorecase
 set smartcase
 
 
-
-
-
-
-
-
-"------ Abbreviations -----
-"Load current buffer in different browsers
-abbrev ff :w<cr> :! open -a firefox.app %:p<cr>
-abbrev ss :w<cr> :! open -a safari.app %:p<cr>
-abbrev cc :w<cr> :! open -a chrome.app %:p<cr>
-
-
-
 "----- Mappings -----
 "Map a change to the Desktop
 " nmap ,d :cd ~/Desktop<cr>:e.<cr>
@@ -164,16 +102,9 @@ imap jj <esc>
 imap ,v <c-p>
 
 
-
-
 " Maps change word to change inner word. Saves one keystroke and I almose always
 " want to change the inner word.
 nmap cw ciw
-
-" delete the current line & replace with an empty line
-" This may cause problems when trying to replace a letter with an r
-nmap rr ccjj
-
 
 " ----- Buffers -----
 "
@@ -214,18 +145,7 @@ endif
 
 
 "----- Plugin Settings -----
-" SnipMate
-let g:snips_author = 'Jarrett Burningham'
-" let g:snips_author = $USER
 
-" Autocomplete list of avaliable snippets
-" imap <tab><tab> <c-r><tab>
-
-
-
-" Zen Coding
-"Change zen coding plugin expansion key to shift + e
-let g:user_zen_expandabbr_key = ',<tab>'
 
 " NERDTree
 " Show hidden files in NerdTree
@@ -278,21 +198,6 @@ endfunction
 nmap ,fp :call FufProject()<CR>
 " nmap ff :call FufProject()<CR>
 let g:fuf_maxMenuWidth = 200
-
-
-" Command-T shorcut
-nmap ff <leader>t
-
-nmap <silent> ff :CommandT<CR>
-nmap <silent> fb :CommandTBuffer<CR>
-nmap <silent> fr :CommandTFlus<CR>
-  " let g:CommandTCancelMap=['jj', '<C-c>']
-
-" Indent Guide Settings
-let g:indent_guides_start_level=2
-let g:indent_guides_guide_size=1
-let g:indent_guides_enable_on_vim_startu = 1
-
 
 
 "----- Fix constant spelling mistakes -----
