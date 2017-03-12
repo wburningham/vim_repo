@@ -2,6 +2,10 @@
 " last updated: 12-Mar-2017
 " wburningham@gmail.com
 
+" NerdTree - http://www.vim.org/scripts/script.php?script_id=1658
+" FuzzyFinder - http://www.vim.org/scripts/script.php?script_id=1984 
+" tComment - http://www.vim.org/scripts/script.php?script_id=1173
+" Toggle - http://www.vim.org/scripts/script.php?script_id=895
 
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
